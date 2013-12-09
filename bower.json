@@ -1,0 +1,13 @@
+{
+  "name": "quetzal-calendar-month",
+  "description": "Component that shows a single month on a calendar",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "dependencies": {
+    "quetzal-element": "JanMiksovsky/quetzal-element#master"
+  },
+  "ignore": [
+    "**/.*"
+  ]
+}
