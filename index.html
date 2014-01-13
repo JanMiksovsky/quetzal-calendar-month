@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<title>quetzal-calendar-month</title>
+
+<script src="../platform/platform.js"></script>
+<link rel="import" href="quetzal-calendar-month.html">
+<link rel="import" href="../quetzal-calendar-day/quetzal-calendar-day.html">
+
+<style>
+body,
+button,
+input {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+}
+
+body {
+  margin: 0.5in;
+}
+</style>
+
+
+<polymer-element name="custom-calendar-day" extends="quetzal-calendar-day" noscript>
+<template>
+  <style>
+  :host([generic]:host) {
+    padding: 4px;
+  }
+  :host([generic]:host) #dateContainer {
+    text-align: right;
+  }
+  </style>
+  <div id="dateContainer">
+    *<span id="date"></span>*
+  </div>
+</template>
+</polymer-element>
+
+</head>
+
+<body>
+  <quetzal-calendar-month dayElementTag="custom-calendar-day"></quetzal-calendar-month>
+</body>
+
+</html>

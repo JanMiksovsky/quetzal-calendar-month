@@ -6,7 +6,7 @@ Shows a single month on a calendar.
 <link rel="import" href="../quetzal-calendar-day/quetzal-calendar-day.html">
 <link rel="import" href="../quetzal-calendar-week/quetzal-calendar-week.html">
 
-<polymer-element name="quetzal-calendar-month" extends="quetzal-element" attributes="culture date">
+<polymer-element name="quetzal-calendar-month" extends="quetzal-element" attributes="culture date dayElementTag">
 
 <template>
 
@@ -24,12 +24,12 @@ Shows a single month on a calendar.
   }
   </style>
 
-  <quetzal-calendar-week></quetzal-calendar-week>
-  <quetzal-calendar-week></quetzal-calendar-week>
-  <quetzal-calendar-week></quetzal-calendar-week>
-  <quetzal-calendar-week></quetzal-calendar-week>
-  <quetzal-calendar-week></quetzal-calendar-week>
-  <quetzal-calendar-week></quetzal-calendar-week>
+  <quetzal-calendar-week dayElementTag="{{dayElementTag}}"></quetzal-calendar-week>
+  <quetzal-calendar-week dayElementTag="{{dayElementTag}}"></quetzal-calendar-week>
+  <quetzal-calendar-week dayElementTag="{{dayElementTag}}"></quetzal-calendar-week>
+  <quetzal-calendar-week dayElementTag="{{dayElementTag}}"></quetzal-calendar-week>
+  <quetzal-calendar-week dayElementTag="{{dayElementTag}}"></quetzal-calendar-week>
+  <quetzal-calendar-week dayElementTag="{{dayElementTag}}"></quetzal-calendar-week>
 
 </template>
 
