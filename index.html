@@ -44,7 +44,9 @@ body {
 window.addEventListener( "WebComponentsReady", function() {
   var calendar = document.querySelector( "#calendar" );
   var date = new Date();
-  var day = calendar.weekElementForDate( date );
+  var week = calendar.weekElementForDate( date );
+  console.log( week );
+  var day = calendar.dayElementForDate( date );
   console.log( day );
 });
 </script>

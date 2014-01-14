@@ -60,7 +60,8 @@ Polymer( "quetzal-calendar-month", {
   },
 
   dayElementForDate: function( date ) {
-    // return this.weekControlForDate( date ).dayControlForDate( date );
+    var week = this.weekElementForDate( date );
+    return week && week.dayElementForDate( date );
   },
 
   // Returns the first date of the indicated month. (Earlier dates may appear
