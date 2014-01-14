@@ -23,7 +23,6 @@ body {
 }
 </style>
 
-
 <polymer-element name="custom-calendar-day" extends="quetzal-calendar-day" noscript>
 <template>
   <style>
@@ -40,10 +39,18 @@ body {
 </template>
 </polymer-element>
 
+<script>
+window.addEventListener( "WebComponentsReady", function() {
+  var calendar = document.querySelector( "#calendar" );
+  var date = new Date();
+  var day = calendar.dayElementForDate( date );
+  console.log( day );
+});
+</script>
 </head>
 
 <body>
-  <quetzal-calendar-month dayElementTag="custom-calendar-day"></quetzal-calendar-month>
+  <quetzal-calendar-month id="calendar" dayElementTag="custom-calendar-day"></quetzal-calendar-month>
 </body>
 
 </html>
