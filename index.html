@@ -23,6 +23,7 @@ body {
 }
 </style>
 
+<!-- Sample custom day that just puts an asterisk after the date -->
 <polymer-element name="custom-calendar-day" extends="quetzal-calendar-day" noscript>
 <template>
   <style>
@@ -34,7 +35,7 @@ body {
   }
   </style>
   <div id="dateContainer">
-    *<span id="date"></span>*
+    <span id="date"></span>*
   </div>
 </template>
 </polymer-element>
@@ -43,7 +44,7 @@ body {
 window.addEventListener( "WebComponentsReady", function() {
   var calendar = document.querySelector( "#calendar" );
   var date = new Date();
-  var day = calendar.dayElementForDate( date );
+  var day = calendar.weekElementForDate( date );
   console.log( day );
 });
 </script>
