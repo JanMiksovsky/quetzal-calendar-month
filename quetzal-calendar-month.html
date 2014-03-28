@@ -19,7 +19,10 @@ Shows a single month on a calendar.
     display: none;
   }
 
-  quetzal-calendar-week /shadow/ quetzal-calendar-day.outsideMonth {
+  polyfill-next-selector {
+    content: 'quetzal-calendar-week quetzal-calendar-day.outsideMonth';
+  }
+  quetzal-calendar-week::shadow quetzal-calendar-day.outsideMonth {
     visibility: hidden;
   }
   </style>
